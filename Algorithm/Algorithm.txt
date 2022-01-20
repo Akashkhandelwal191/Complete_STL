@@ -1,0 +1,10 @@
+The header algorithm defines a collection of functions especially designed to be used on ranges of elements.They act on containers and provide means for various operations for the contents of the containers.
+
+>Algorithm
+
+1.Sorting 
+2.Searching 
+3.Important STL Algorithms
+4.Useful Array Algorithms
+5.Partition Operations
+

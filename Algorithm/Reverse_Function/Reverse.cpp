@@ -2,6 +2,8 @@
 #include<algorithm>
 
 
+//Reverse Function Implementation Using STL
+
 using namespace std;
 
 int main()
@@ -22,10 +24,6 @@ int main()
    {
        cout<<arr[i]<<" ";
    }
-
-  
-
-
 
 
     return 0;

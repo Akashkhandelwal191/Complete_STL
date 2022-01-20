@@ -1,0 +1,33 @@
+Containers or container classes store objects and data. There are in total seven standard “first-class” container classes and three container adaptor classes and only seven header files that provide access to these containers or container adaptors.
+
+A.Sequence Containers: implement data structures which can be accessed in a sequential manner.
+
+1.Vector
+2.List
+3.Deque
+4.Arrays
+5.forward_list
+
+
+B.Container Adaptors:provide a different interface for sequential containers.
+
+1.Queue
+2.Priority_queue
+3.Stack
+
+
+C.Associative Containers
+
+1.Set
+2.MultiSet
+3.Map
+4.MultiMap
+
+
+d.Unordered Associative Containers : implement unordered data structures that can be quickly searched
+
+
+1.Unordered_set
+2.Unordered_map
+3.Unordered_multimap
+4.Unordered_multiset
