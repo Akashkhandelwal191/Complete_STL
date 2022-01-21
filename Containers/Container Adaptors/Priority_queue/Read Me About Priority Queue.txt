@@ -1,0 +1,20 @@
+Priority queues are a type of container adapters, specifically designed such that the first element of the queue is the greatest of all elements in the queue and elements are in nonincreasing order (hence we can see that each element of the queue has a priority {fixed order}). Following is an example to demonstrate the priority queue and its various methods.
+
+
+Priority Queue Syntax:-
+priority_queue<int> q;
+
+
+Priority Queue Syntax:- 
+priority_queue<int,vector<int>,greater<int>> gq;
+
+
+
+ 
+1.queue::empty() :- Returns whether the queue is empty.
+2.queue::size() :- Returns the size of the queue.
+3.queue::top() :- Returns the topmost element of the queue.
+4.queue::push() :- Add the element 'g' at the end of the queue.
+5.queue::pop() :- Deletes the first element of the queue.
+
+
