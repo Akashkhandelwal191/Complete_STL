@@ -1,7 +1,8 @@
 #include<iostream>
-#include<conio.h>
+#include<vector>
+#include<algorithm>
 
-
+//Implementation Of max_element() Function
 
 using namespace std;
 
@@ -19,12 +20,39 @@ If more than one element satisfies the condition of being the largest, the itera
 
 */
 
+void show(vector<int> &v)
+{  
+   cout<<endl;
+   for(auto i:v)
+   {
+     cout<<i<<" ";
+   }
+
+}
 
 int main()
 {
 
+   vector<int> v;
 
+   int n;
+   cout<<"Enter The Size Of Vectors:"<<endl;
+   cin>>n;
 
-
+   cout<<"Enter The Elements Of the Vector:"<<endl;
+   for(int i=0;i<n;i++)
+   {
+       int item;
+       cin>>item;
+       v.push_back(item);
+   } 
+   cout<<"Printing The Elements Of The Vector:"<<endl;
+   show(v);
+   
+   int max = *max_element(v.begin(),v.end());
+     
+   cout<<endl;
+   cout<<"The Max Element Is : "<<max<<endl;
+  
 
 }

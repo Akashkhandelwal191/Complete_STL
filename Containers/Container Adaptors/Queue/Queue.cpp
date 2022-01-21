@@ -1,27 +1,38 @@
-#include<iostream>
-#include<queue>
+#include <iostream>
+#include <queue>
 
 using namespace std;
 
+/*
+Queue Implementation Using STL In C++
+*/
+
+
+void print(queue<int>q)
+{
+  
+   cout<<endl;
+   while(!q.empty())
+   {
+       cout<<q.front()<<" ";
+       q.pop();
+   }
+   
+}
+
 int main()
 {
- 
-    queue<string> q;
 
-    q.push("love");
-    q.push("babar");
-    q.push("Kumar");
+    queue<int> q;
+  
+    //Insert Element in Queue
+    q.push(1);
+    q.push(2);
+    q.push(3);
+    q.push(4);
+    q.push(5);
 
-    cout<<"First Element "<<q.front()<<endl;   
-    q.pop();
-    cout<<"First Element After Pop "<<q.front()<<endl;
-
-    cout<<q.back()<<endl;
-
-    cout<<"the size of the queue "<<q.size()<<endl;
-
-     
-
+    print(q);
 
 
     return 0;
