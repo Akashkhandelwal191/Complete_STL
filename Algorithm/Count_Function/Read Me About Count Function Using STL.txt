@@ -1,0 +1,1 @@
+count(first_iterator, last_iterator,x) – To count the occurrences of x in vector.

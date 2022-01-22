@@ -1,0 +1,13 @@
+Iterators are used to point at the memory addresses of STL containers. They are primarily used in sequence of numbers, characters etc. They reduce the complexity and execution time of program.
+
+Syntax:-
+container_type <parameter_list>::iterator iterator_name;
+
+
+Two Main Operations of iterators :-
+
+1. begin() :- This function is used to return the beginning position of the container.
+
+2. end() :- This function is used to return the after end position of the container.
+
+Note:- There are lot of function of iterators but these two are most important.
