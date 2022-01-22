@@ -1,0 +1,55 @@
+Sets are a type of associative containers in which each element has to be unique because the value of the element identifies it. The values are stored in a specific order.
+
+
+Syntax:-
+set<datatype> setname;
+
+
+Datatype:- Set can take any data type depending on the values. e.g. int,float,char,etc.
+
+Example:
+set<int> val; //Defining an empty set
+set<int> val = {6,10,5,1}; //Defining a set with values
+
+
+Note: set<datatype, greater<datatype>> setname; is used for storing values in a set in descending order.
+ 
+Properties:
+
+1.The Set Stores The Elements in sorted order.
+2.All the elements in the set have unique values.
+3.The Value Of the element cannot be modified once it is added to the set,
+ though it is possible to remove and then add the modified value of that element 
+ thus,the values are immutable.
+4.Sets Follows the binary search tree Implementation.
+5.The Values in a set are unindexed
+
+
+Some Basic Functions Associated With Set:
+
+1.begin() - Returns an iterator to the first element in the set.
+2.end() - Returns an iterator to the theoretical element that follow the last element in the set.
+3.size() - Returns the number of the elements in the set.
+4.max_size() - Returns the maximum number of elements that the set can hold.
+5.empty() - Returns whether the set is empty.
+6.insert(const g) - Add a new element 'g' to the set.
+7.erase(iterator_position) - Removes the element at the position pointed by the 
+iterator.
+
+8.erase(const g) - Removes the value 'g' from the set.
+9.clear() - Removes all the elements from the set.
+
+10.find(const g) - Returns an iterator to the element 'g' in the set if found
+                   ,else returns the iterator to end.
+
+
+
+
+
+ 
+
+
+
+
+
+
