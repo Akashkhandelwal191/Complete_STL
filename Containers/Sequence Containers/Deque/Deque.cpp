@@ -5,51 +5,78 @@
 using namespace std;
 
 
+void show(deque<int> d)
+{   
+   cout<<endl;
+   cout<<"Accessing The Value Of Deque Using auto keyword in Loop"<<endl;
+   cout<<"Size Of The Deque Currently : "<<d.size()<<endl;
+   //It Is Simple Way Of Accessing The Value Of The Deque
+   for(auto i:d)
+   {
+     cout<<i<<" ";
+   }
+}
+
+ void showdq(deque<int> d)
+ { 
+   cout<<endl;
+   cout<<"Accessing The Value Of Deque Using Iterator "<<endl;
+   cout<<"Size OF The Deque Currently : "<<d.size()<<endl;
+   //It Is Another Way Of Accessing The Value Of The Iterator Using Iterator.
+
+   deque<int>::iterator it;
+   
+   for(it=d.begin();it!=d.end();it++)
+   {
+     cout<<(*it)<<" ";
+   }
+
+ }
+
+
 int main()
 {
 
   deque<int> d;
 
-  d.push_back(1);
-  d.push_front(2);
-
-
-  for(int i:d){
-      cout<<i<<" ";
-  }
-  d.pop_back();  
+  int n;
+  cout<<"Enter the number of elements you want to insert in a deque"<<endl;
+  cin>>n;
+  
   cout<<endl;
-  for(int i:d){
-      cout<<i<<" ";
-  } 
-
-  d.push_back(3);
-  d.push_back(4);
-
-  for(int i:d){
-      cout<<i<<" ";
+  cout<<"Enter the elements :"<<endl;
+  for(int i=0;i<n;i++)
+  {
+     int item;
+     cin>>item;
+     d.push_back(item);  //It Pushes the element in deque to the back
   }
+
+  show(d);
+
+  d.push_front(90);   //It Pushes the element in deque to the front
+  d.push_front(30);
+  
+  show(d);
+  
   cout<<endl;
-  cout<<"Front "<<d.front()<<endl;
-  cout<<"End "<<d.back()<<endl;     
-  cout<<"Empty Or not "<<d.empty()<<endl;
+  cout<<"Pop Operation Perform From The Back: "<<endl;
+  d.pop_back(); //It removes or pops the last value from the deque
 
-//   d.pop_front();
-  cout<<"After Pop Front"<<endl;
-  for(int i:d){
-    cout<<i<<" ";
-  }
-
-  cout<<"Before Erase "<<d.size()<<endl; //Size Means How Many Elements are Present in this list.
-  d.erase(d.begin(),d.begin()+1);
-  cout<<"After Erase "<<d.size()<<endl;  
-
-
-  cout<<"After Erase"<<endl;
-  for(int i:d){
-      cout<<i<<" ";
-  }
+  show(d);
+ 
   cout<<endl;
-  cout<<d.at(1)<<endl;
+  cout<<"Pop Operation Perform From The Front : "<<endl;
+  d.pop_front();
+
+  show(d);
+  cout<<endl;
+  cout<<"Front Element Of The Deque : "<<d.front()<<endl;
+  cout<<"Back Element Of The Deque  :  "<<d.back()<<endl;
+
+  showdq(d);
+
+
+
 
 }

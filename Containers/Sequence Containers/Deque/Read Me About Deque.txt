@@ -1,0 +1,41 @@
+Double-ended queues are sequence containers with the feature of expansion and contraction on both ends. They are similar to vectors, but are more efficient in case of insertion and deletion of elements. Unlike vectors, contiguous storage allocation may not be guaranteed. 
+
+Double Ended Queues are basically an implementation of the data structure double-ended queue. A queue data structure allows insertion only at the end and deletion from the front. This is like a queue in real life, wherein people are removed from the front and added at the back. Double-ended queues are a special case of queues where insertion and deletion operations are possible at both the ends.
+
+The functions for deque are same as vector, with an addition of push and pop operations for both front and back.
+
+
+deque::push_front() :- It is used to push elements into a deque from the front.
+
+deque::push_back()  :- This function is used to push elements into a deque from the back.
+
+deque::pop_front()  :- pop_front() function is used to pop or remove elements from a deque from the front.
+
+deque::pop_back() :- pop_back() function is used to pop or remove elements from a deque from the back.
+
+
+deque::front() :- front() function is used to reference the first element of the deque container.
+
+
+deque::back() : - back() function is used to reference the last element of the deque container.
+
+deque::clear() : -clear() function is used to remove all the elements of the deque container, thus making its size 0.
+
+deque::erase() :- erase() function is used to remove elements from a container from the specified position or range.
+
+deque::empty() :- empty() function is used to check if the deque container is empty or not.
+
+deque::size() :- size() function is used to return the size of the deque container or the number of elements in the deque container.
+
+deque::at() : - at() function is used reference the element present at the position given as the parameter to the function.
+
+deque::swap() :- swap() function is used to swap the contents of one deque with another deque of same type and size.
+
+deque::begin() :- begin() function is used to return an iterator pointing to the first element of the deque container.
+
+
+deque::end() :- end() function is used to return an iterator pointing to the last element of the deque container.
+
+
+deque::find() : - Finds the element in the given range of numbers. Returns an iterator to the first element in the range [first,last] that compares equal to val. If no such element is found, the function returns last.
+ 
