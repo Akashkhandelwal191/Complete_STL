@@ -11,6 +11,8 @@ int main(){
 
   l.push_back(1);
   l.push_front(2);
+  l.push_back(3);
+
 
   for(int i:l)
   {
